@@ -14,6 +14,8 @@
   * 大きな騒ぎの引き金になった, Spectre/MeltdownのPoCに成功したという内容と解説の記事
 * [SpectreとeBPF](http://mmi.hatenablog.com/entry/2018/02/02/003325)
   * 上記Project ZeroのSpectre v1, v2に対する日本語解説
+* [SpectreBustersあるいはLinuxにおけるSpectre対策](https://www.slideshare.net/mhiramat/spectrebusterslinuxspectre)
+  * Variant 2 についての説明が詳しい
 
 
 ## Linux kernelについて
