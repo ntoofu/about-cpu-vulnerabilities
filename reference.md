@@ -8,6 +8,8 @@
   * 所謂 "パタヘネ" 本
 * [The microarchitecture of Intel, AMD, and VIA CPUs](https://www.agner.org/optimize/microarchitecture.pdf)
   * 多くの世代のx86 CPUのマイクロアーキテクチャについてまとめて記している
+* [ハイパーバイザの作り方～ちゃんと理解する仮想化技術～](https://syuu1228.github.io/howto_implement_hypervisor/)
+  * 仮想化関係について
 
 ## CPU脆弱性に関して
 * [Project Zero](https://googleprojectzero.blogspot.com/2018/01/reading-privileged-memory-with-side.html)
@@ -16,6 +18,15 @@
   * 上記Project ZeroのSpectre v1, v2に対する日本語解説
 * [SpectreBustersあるいはLinuxにおけるSpectre対策](https://www.slideshare.net/mhiramat/spectrebusterslinuxspectre)
   * Variant 2 についての説明が詳しい
-
+* [Negative Result: Reading Kernel Memory From User Mode](https://cyber.wtf/2017/07/28/negative-result-reading-kernel-memory-from-user-mode/)
+  * Variant 3 についての細かい部分が書いてある
+  * Project Zeroでもリンクが貼ってあるところ
+* [Understanding L1 Terminal Fault aka Foreshadow: What you need to know](https://www.redhat.com/en/blog/understanding-l1-terminal-fault-aka-foreshadow-what-you-need-know)
+  * L1TFについてよくまとまっている
 
 ## Linux kernelについて
+* [詳解 Linuxカーネル 第3版](https://www.oreilly.co.jp/books/9784873113135/)
+  * 定番本で参考になる部分は多い
+  * とはいえだいぶ古くなってきてはいるので, 最新ではないことに気を払ったほうが良いかもしれない
+* [LWN.net](https://lwn.net/)
+  * Linux kernelに関わるニュース系色々…
