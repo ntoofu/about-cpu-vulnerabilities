@@ -23,6 +23,8 @@
   * Project Zeroでもリンクが貼ってあるところ
 * [Understanding L1 Terminal Fault aka Foreshadow: What you need to know](https://www.redhat.com/en/blog/understanding-l1-terminal-fault-aka-foreshadow-what-you-need-know)
   * L1TFについてよくまとまっている
+* [Speculative Store Bypass explained: what it is, how it works](https://www.redhat.com/en/blog/speculative-store-bypass-explained-what-it-how-it-works)
+  * Variant 4
 
 ## Linux kernelについて
 * [詳解 Linuxカーネル 第3版](https://www.oreilly.co.jp/books/9784873113135/)

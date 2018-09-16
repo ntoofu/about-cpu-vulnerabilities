@@ -1,2 +1,0 @@
-# Speculative Store Bypass
-
