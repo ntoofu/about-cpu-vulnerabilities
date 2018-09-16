@@ -25,6 +25,9 @@
   * L1TFについてよくまとまっている
 * [Speculative Store Bypass explained: what it is, how it works](https://www.redhat.com/en/blog/speculative-store-bypass-explained-what-it-how-it-works)
   * Variant 4
+* [CVE-2018-3640](https://access.redhat.com/security/cve/cve-2018-3640)
+  * Variant 3a
+  * 詳細はあまり書かれていないが, 他に良いページも見当たらず
 
 ## Linux kernelについて
 * [詳解 Linuxカーネル 第3版](https://www.oreilly.co.jp/books/9784873113135/)

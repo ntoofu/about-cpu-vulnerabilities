@@ -1,2 +1,0 @@
-# Rogue System Register Read
-
