@@ -28,6 +28,8 @@
 * [CVE-2018-3640](https://access.redhat.com/security/cve/cve-2018-3640)
   * Variant 3a
   * 詳細はあまり書かれていないが, 他に良いページも見当たらず
+* [Lazy FPU Save/Restore (CVE-2018-3665)](https://access.redhat.com/solutions/3485131)
+  * Lazy FP State Restore
 
 ## Linux kernelについて
 * [詳解 Linuxカーネル 第3版](https://www.oreilly.co.jp/books/9784873113135/)
