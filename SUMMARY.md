@@ -30,5 +30,6 @@
   * [Rogue System Register Read](misc/rsrr.md)
   * [Speculative Store Bypass](misc/ssb.md)
   * [Lazy FP State Restore](misc/lfpsr.md)
+  * [NetSpectre](misc/netspectre.md)
   * [TLBleed](misc/tlbleed.md)
 * [参考文献](reference.md)
