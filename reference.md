@@ -30,6 +30,8 @@
   * 詳細はあまり書かれていないが, 他に良いページも見当たらず
 * [Lazy FPU Save/Restore (CVE-2018-3665)](https://access.redhat.com/solutions/3485131)
   * Lazy FP State Restore
+* [TLBleed : Trasnlation Leak-aside Buffer の論文を読む](http://msyksphinz.hatenablog.com/entry/2018/07/13/040000)
+  * TLBleedについての概説
 
 ## Linux kernelについて
 * [詳解 Linuxカーネル 第3版](https://www.oreilly.co.jp/books/9784873113135/)
