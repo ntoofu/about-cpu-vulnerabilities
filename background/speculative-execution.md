@@ -20,15 +20,23 @@
     * (ロード命令などの場合)演算結果をもとにメモリにアクセス
     * 演算あるいはメモリアクセスの結果をレジスタに書き込み
 * CPUはそれら1つ1つの工程(ステージ)をこなす回路を持つことになる
+
+![MIPS Architecture](https://upload.wikimedia.org/wikipedia/commons/e/ea/MIPS_Architecture_%28Pipelined%29.svg) [画像出典](https://fr.wikipedia.org/wiki/Architecture_MIPS)
+
 * 1つの命令に対し全てのステージの処理を実施した後, 次の命令に取り掛かるのではなく, 工場の流れ作業のように, 各ステージで常に前ステージからやってくる命令を処理することでスループットを劇的に向上できる
 * 実際にはもっとステージは細分化している事が多い
     * 必ずしも公開されているわけでは無いようだが, Intelの最近のプロセッサは10段以上のパイプラインを持っている
 
+![Pipeline](https://upload.wikimedia.org/wikipedia/commons/6/67/5_Stage_Pipeline.svg) [画像出典](https://ja.wikipedia.org/wiki/%E5%91%BD%E4%BB%A4%E3%83%91%E3%82%A4%E3%83%97%E3%83%A9%E3%82%A4%E3%83%B3)
+
+
 ## パイプライン・ストール
 
-* しかし, 多重的に命令が処理される影響で, 状況によってはメモリアクセスと関係なくパイプラインを空転させる必要が出てしまう = パイプライン・ストール
+* しかし, 多重的に命令が処理される影響で, 状況によってはパイプラインを空転させざるを得なくなる = パイプライン・ストール
     * 回路として先行ステージの処理で利用しているところと競合する
     * 前ステージの結果を元にした演算をしたい
     * 条件分岐によりそもそも次に実行する命令がわからない
         * 命令のフェッチができないため, 影響大
 * パイプライン化の恩恵が台無しになってしまうため, 投機的実行をしたいという話になる
+
+![control hazard](https://slideplayer.com/slide/1546541/5/images/35/Pipeline%3A+Stall+on+Control+Hazard.jpg) [画像出典](https://slideplayer.com/slide/1546541/)

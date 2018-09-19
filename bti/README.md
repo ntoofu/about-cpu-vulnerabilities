@@ -6,3 +6,5 @@
   * ただし実践する難易度も理解する難易度もすごいやつ(私見)
 * Spectre として 2018年1月に騒いでいたやつの1つ
 * Variant 2 とも
+
+![Spectre](https://meltdownattack.com/spectre.svg) [画像出典](https://meltdownattack.com/)
