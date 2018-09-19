@@ -8,6 +8,9 @@ if (x < array1_size)
 * コンセプトは説明した通りだが, 実際に意味のある攻撃として成立するには前提,条件,制約が多い
   * これ自体はkernelの権限を奪取するというような話ではないので, (Meltdownの事を考えなければ)kernel空間のメモリが読みたければ**kernel modeで実行する必要**がある
   * kernelの権限で任意コード実行できる状況ならSpectreにかかわらずメモリを読み放題なので, 何の旨味もない
+
+ ![virtual address space](https://pentesterslife.files.wordpress.com/2017/11/fig112.png) [画像出典](https://pentesterslife.blog/2017/11/24/x64-egg-hunting-in-linux-systems/)
+
 * 任意コードは実行できないが, `if (x < array1_size)` のような境界値チェックにより安全が確認された上であれば, 権限付きでコードを実行することができるようなケースに, Spectreのつけいる隙がある
   * 投機的実行により境界値チェックをすり抜けてユーザーのコードが陰ながら実行されてしまい, その中で値を読み出しキャッシュ上に値に応じた痕跡を残すことが可能
   * Project Zero では extended BPF という, ユーザーのコードを静的に安全性を確認した上でkernelで実行する仕組み(iptablesに代わるfirewallとして注目されていたりする)を利用

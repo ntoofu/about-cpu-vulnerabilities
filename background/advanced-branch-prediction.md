@@ -12,6 +12,7 @@
 
 ## indirect branch
 * 分岐にはループや `if` によるものだけでなく, ジャンプ先が変数になっていて動的に決定するような `indirect branch` もある
+  * 一般的な分岐と異なり, 成立/不成立の2択ではなく分岐先アドレス自体が不明
   * 予測自体は難しいが, 近年のCPUでは予測をそれにも取り組んでいる
 * indirect branchで一番多いのはsubroutine callからのreturn
   * return = call stackに積まれたアドレスを元にジャンプする = indirect branch

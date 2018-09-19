@@ -14,3 +14,5 @@
 * 複数のスレッドを同時に実行できるようになり, 1つのコアで見た目上は(論理的には)コアが複数あるかのように振る舞うことになる
 * こうすることで, 片方のスレッドがcache miss等で長い待ち時間に陥っても, その間もう片方のスレッドを集中的に実行するようになり, 全体ではCPUの稼働率を高められる
 * スレッド間では基本的にデータの依存性が無いため, cache miss以外でも依存の解決待ち等が起こりにくくなる
+
+![SMT](https://qph.fs.quoracdn.net/main-qimg-f499708300143b01862533bf33f30a9e) [画像出典](https://www.quora.com/How-does-multithreading-differ-from-hyper-threading)

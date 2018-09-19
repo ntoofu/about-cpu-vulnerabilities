@@ -4,6 +4,8 @@
   * どちらも仮想アドレスが振られており, プログラムはそのアドレスを用いて同じようにアクセスするだけ
 * CPUは補助記憶に退避されたデータに対応する仮想アドレスにアクセスした際, page faultという例外を起こす
   * 補助記憶装置の何処かに退避されたデータを取ってくるような複雑なことをCPUが直接行うことは出来ない
-  * メモリ上に無いということが分かると, 例外を起こしてkernelに委ねる
-    * CPUはpage tableの各エントリに存在する `present` フラグによりメモリ上に存在するかどうかを判別する
+  * **メモリ上に無いということが分かると, 例外を起こしてkernelに委ねる**
+    * CPUはpage tableの各エントリに存在する `present` bitによりメモリ上に存在するかどうかを判別する
 * 結果的にkernelの処理に遷移し, その中で退避したデータをメモリ上に戻す(page in)
+
+![demand paging](https://image.slidesharecdn.com/demandpaging-151030101709-lva1-app6892/95/demand-paging-8-638.jpg?cb=1446200431) [画像出典](https://www.slideshare.net/TipsDwarka/demand-paging-54559866)

@@ -17,3 +17,5 @@
     * `PCID` という仕組みがあると, TLBのflushを一定度抑止できるため, パフォーマンス低下を軽減できる
       * TLBのエントリにプロセス等を識別するためのタグを仕込めるようになるもので, 都度flushする必要がなくなる
       * flushする際も `INVPCID` により PCIDごとにTLBをflushできるようになるため, 部分的にflushする制御がしやすくなる
+
+![KPTI](https://upload.wikimedia.org/wikipedia/commons/3/33/Kernel_page-table_isolation.svg) [画像出典](https://en.wikipedia.org/wiki/Kernel_page-table_isolation)

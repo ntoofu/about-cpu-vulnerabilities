@@ -19,4 +19,6 @@
 * ただし, Intel Hyper Threading TechnologyのようなSimultaneous Multi-thread (SMT) の場合は, 更に厄介
   * 論理スレッドがL1 cacheを共有してしまっているので, L1 cacheを適宜flushするだけではダメ
   * 盗み見られたらマズい処理と, 攻撃者のものかもしれない処理を, 同じSMTのスレッドのペアに割り当てないようにするしかない
-  * (実は, Spectre variant 2でも同様に, SMTの場合はBTBやBHBを共有しているためにIBPB等で完全に対処できるとは言い切れない事情があったりする)
+  * (実は, 他にもSMTが関連する脆弱性はある)
+    * Spectre variant 2でも同様に, SMTの場合はBTBやBHBを共有しているためにIBPB等で完全に対処できるとは言い切れない事情がある
+    * TLBleedでも, victimと攻撃者がTLBを共有するためにSMTを利用している
